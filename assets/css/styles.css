@@ -1,0 +1,273 @@
+/*
+Copyright (c) 2011, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.9.0
+*/
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,button,caption,cite,code,dfn,em,input,optgroup,option,select,strong,textarea,th,var{font:inherit}del,ins{text-decoration:none}li{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:baseline}sub{vertical-align:baseline}legend{color:#000}
+
+body {color:#000000;font-size:15px;font-family:'Open Sans';font-weight:500;}
+html,
+body {height:100%;}
+
+a {text-decoration:none;cursor:pointer;color:#000000;}
+a:hover {text-decoration:none;}
+
+strong {font-weight:bold;}
+
+.clear {clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0;}
+.wrapper {width:1200px;margin:0 auto;position:relative;}
+.last {margin-right:0px !important;}
+
+.titulo-padrao {text-align:center;text-transform:uppercase;padding-top:150px;margin-bottom:40px;line-height:44px;}
+.titulo-padrao .part1 {font-size:35px;font-family:'uniform_condensed_lightRg';}
+.titulo-padrao .part2 {font-size:46px;font-family:'uniform_condensedbold';}
+
+.comecar {display:table;margin:0 auto;width:680px;height:160px;background:url(http://q48emagrecimento.com/images/bg_querocomecar.png) no-repeat center;text-align:center;margin-top:30px;}
+.comecar .part1 {text-transform:uppercase;color:white;font-size:43px;font-family:'uniform_condensedbold';padding-top:55px;text-shadow:0px 0px 4px #4e8801;padding-right:40px;}
+.comecar .part2 {color:black;font-size:17px;font-family:'Open Sans';font-weight:500;padding-right:40px;}
+
+.adquira {font-size:14px;font-family:'Open Sans';font-weight:500;text-align:center;text-transform:uppercase;margin-top:20px;float:left;}
+.adquira strong {font-weight:800;}
+
+.bandeiras {float:left;margin-left:26px;margin-top:30px;}
+
+.adquira-bandeiras {display:table;margin:0 auto;}
+
+#header {position:absolute;top:0px;left:0px;width:100%;z-index:9;}
+#header .logo {position:absolute;left:50%;transform:translateX(-50%);top:56px;}
+#header .social {position:absolute;right:0px;top:73px;}
+#header .social li {float:left;margin-left:8px;}
+#header .membros {position:absolute;top:78px;font-size:20px;right:160px;font-family:'uniform_condensedbold';}
+
+#footer {padding:50px 0px 80px 0px;}
+#footer .titulo {text-align:center;margin-bottom:20px;font-size:20px;text-transform:uppercase;font-family:'uniform_condensedbold';}
+#footer .termos {display:table;margin:0 auto;margin-top:30px;text-transform:uppercase;font-size:18px;text-decoration:underline;}
+#footer .logo {display:table;margin:0 auto;margin-top:30px;}
+#footer .mCSB_dragger_bar {width:8px;background:#e5e5e5;}
+#footer .mCSB_draggerRail {display:none !important;}
+
+#home {background:url(http://q48emagrecimento.com/images/bg_home.jpg) no-repeat center top;height:1000px;}
+#home .revelado {position:absolute;margin-top:250px;left:50%;width:640px;font-family:'uniform_condensedbold';margin-left:-60px;}
+#home .revelado .titulo {font-size:48px;margin-bottom:11px;text-transform:uppercase;}
+#home .revelado .texto1 {font-size:35px;line-height:50px;}
+#home .revelado .texto1 span {color:#cc0000;}
+#home .revelado .texto2 {font-size:17px;margin-top:15px;text-transform:uppercase;}
+#home .revelado div.obs {font-family:'Open Sans';}
+
+#resultados {background-color: #ebebeb;height:970px; margin-top: -130px;}
+#resultados .pessoas {display:table;margin-left:113px;}
+#resultados .pessoas .pessoa {float:left;width:430px;margin:0px 113px 0 0;text-align:center;}
+#resultados .pessoas .pessoa .video {position:relative;overflow:hidden;height:243px;border-radius:6px;width:100%;display:block;}
+#resultados .pessoas .pessoa .video .overlay {position:absolute;z-index:2;width:100%;height:100%;background:black;opacity:0.3;}
+#resultados .pessoas .pessoa .video img {height:260px;}
+#resultados .pessoas .pessoa .video .perdeu {text-transform:uppercase;color:#f29a06;position:absolute;width:190px;margin-top:60px;z-index:4;}
+#resultados .pessoas .pessoa .video .perdeu .part1 {font-size:40px;font-family:'uniform_condensed_lightRg';}
+#resultados .pessoas .pessoa .video .perdeu .part2 {font-size:53px;font-family:'uniform_condensedbold';line-height:35px;}
+#resultados .pessoas .pessoa .video .perdeu .part3 {font-size:27px;font-family:'uniform_condensed_lightRg';}
+#resultados .pessoas .pessoa .video .play {width:100%;height:100%;background:url(http://q48emagrecimento.com/images/ico_play2.png) no-repeat center;position:absolute;z-index:2;}
+#resultados .pessoas .pessoa .nome {text-transform:uppercase;font-size:20px;font-family:'uniform_condensedbold';margin-top:25px;margin-bottom:12px;}
+#resultados .pessoas .pessoa .texto {font-size:19px;font-family:'Open Sans';font-weight:500;}
+#resultados .aviso, #depoimentos .aviso, #depoimento .aviso, #diferencas .aviso {margin-top: 35px; text-align: center;}
+
+#diferente {margin-top:-100px;height: 700px;}
+#diferente .box-texto {float:left;width:550px;text-align:justify;line-height:25px;}
+#diferente .box-texto p {margin-bottom:15px;}
+#diferente img {float:right;}
+
+#depoimento {padding-top:220px;}
+#depoimento.depoimento1 {background:url(http://q48emagrecimento.com/images/bg_video2.jpg) no-repeat center top;height:1035px;}
+#depoimento.depoimento2 {background:url(http://q48emagrecimento.com/images/bg_video3.jpg) no-repeat center top;height:956px;}
+#depoimento .video {position:relative;overflow:hidden;height:510px;border-radius:6px;width:100%;border:10px solid white;display:block;}
+#depoimento .video .overlay {position:absolute;z-index:2;width:100%;height:100%;background:black;opacity:0.3;}
+#depoimento .video img {width:100%;}
+#depoimento .video .perdeu {text-transform:uppercase;color:#f6ab00;position:absolute;width:380px;margin-top:105px;z-index:4;right:0px;text-align:center;}
+#depoimento.depoimento2 .perdeu {left:0px;right:inherit;}
+#depoimento .video .perdeu .part1 {font-size:94px;font-family:'uniform_condensed_lightRg';}
+#depoimento .video .perdeu .part2 {font-size:127px;font-family:'uniform_condensedbold';line-height:80px;}
+#depoimento .video .perdeu .part3 {font-size:63px;font-family:'uniform_condensed_lightRg';}
+#depoimento .video .play {width:100%;height:332px;background:url(http://q48emagrecimento.com/images/ico_play.png) no-repeat center;position:absolute;z-index:3;}
+#depoimento .video .nome {color:white;text-transform:uppercase;position:absolute;z-index:3;width:100%;margin-top:250px;text-align:center;line-height:63px;}
+#depoimento .video .nome .part1 {font-size:47px;font-family:'uniform_condensed_lightRg';}
+#depoimento .video .nome .part2 {font-size:83px;font-family:'uniform_condensedbold';}
+#depoimento .texto {width:1000px;text-align:center;display:table;margin:0 auto;margin-top:30px;font-size:20px;}
+
+#diferencas {margin-top:-110px;position:relative;}
+#diferencas .box {float:left;width:400px;margin:0px 90px;}
+#diferencas .box.error {color:#c62727;text-align:right;}
+#diferencas .box.success {color:#5da400;}
+#diferencas .box .titulo {text-transform:uppercase;margin-top:30px;line-height:60px;margin-bottom:50px;}
+#diferencas .box .titulo .part1 {font-size:44px;font-family:'uniform_condensed_lightRg';}
+#diferencas .box .titulo .part2 {font-size:77px;font-family:'uniform_condensedbold';}
+#diferencas .box ul li {text-transform:uppercase;font-size:16px;font-family:'uniform_condensedbold';height:26px;line-height:26px;margin-bottom:30px;}
+#diferencas .box.error ul li {padding-right:45px;background:url(http://q48emagrecimento.com/images/ico_error.png) no-repeat right center;}
+#diferencas .box.success ul li {padding-left:45px;background:url(http://q48emagrecimento.com/images/ico_success.png) no-repeat left center;}
+
+#dispositivos {background:url(http://q48emagrecimento.com/images/bg_resultados.png) no-repeat center top;margin-top:-32px;}
+#dispositivos .titulo-padrao {padding-top:80px;}
+#dispositivos .aqui-esta {text-align:center;text-transform:uppercase;font-family:'uniform_condensedbold';font-size:24px;color:#f6ab00;margin-bottom:60px;}
+#dispositivos .dispositivos {margin-bottom:80px;}
+#dispositivos .dispositivos .imagem {float:left;width:870px;}
+#dispositivos .dispositivos .box-texto {float:left;width:250px;margin-top:170px;}
+#dispositivos .dispositivos .box-texto .texto {text-transform:uppercase;}
+#dispositivos .dispositivos .box-texto .texto .part1 {font-family:'uniform_condensed_lightRg';font-size:25px;}
+#dispositivos .dispositivos .box-texto .texto .part2 {font-size:40px;line-height:40px;font-family:'uniform_condensed_lightRg';}
+#dispositivos .dispositivos .box-texto .texto strong {font-family:'uniform_condensedbold';color:#f6ab00;}
+#dispositivos .dispositivos .box-texto img {margin-top:30px;}
+#dispositivos .ciclo {border-bottom:1px solid #d6d6d6;padding-bottom:40px;margin-bottom:70px;}
+#dispositivos .ciclo img {float:left;}
+#dispositivos .ciclo .box-texto {float:right;width:600px;}
+#dispositivos .ciclo .titulo {text-transform:uppercase;font-size:35px;margin-bottom:6px;font-family:'uniform_condensed_lightRg';}
+#dispositivos .ciclo .titulo strong {font-family:'uniform_condensedbold';}
+#dispositivos .ciclo .box {margin-bottom:25px;}
+#dispositivos .ciclo .texto {font-size:18px;line-height:28px;}
+#dispositivos .ciclo ul li {padding-left:20px;margin-bottom:10px;font-size:14px;font-weight:800;}
+#dispositivos .ciclo.ciclo1 ul li {color:#3366cc;background:url(http://q48emagrecimento.com/images/ico_ciclo.png) no-repeat left center;}
+#dispositivos .ciclo.ciclo2 ul li {color:#f6ab00;background:url(http://q48emagrecimento.com/images/ico_ciclo2.png) no-repeat left center;}
+#dispositivos .ciclo.ciclo3 ul li {color:#962323;background:url(http://q48emagrecimento.com/images/ico_ciclo3.png) no-repeat left center;}
+#dispositivos .obs {text-align:center;margin-top: -20px;}
+
+#bonus {background:url(http://q48emagrecimento.com/images/bg_bonus.png) no-repeat center top;margin-top:50px;height:1050px;}
+#bonus .titulo-padrao {padding-top:110px;margin-bottom:50px;}
+#bonus .bonus {float:left;width:335px;margin-right:97px;}
+#bonus .bonus .imagem {width:335px;height:335px;border-radius:100%;background:#f6ab00;position:relative;}
+#bonus .bonus .imagem img {position:absolute;margin:auto;left:0;right:0;top:0;bottom:0;}
+#bonus .bonus .nome {font-size:20px;text-transform:uppercase;margin-bottom:20px;font-family:'uniform_condensedbold';margin-top:20px;}
+#bonus .bonus .texto {text-align:justify;line-height:24px;}
+
+#super-bonus {background:url(http://q48emagrecimento.com/images/bg_superbonus.png) no-repeat center top;height:1000px;margin-top:-130px;}
+#super-bonus .titulo-padrao {background:url(http://q48emagrecimento.com/images/ico_star.png) no-repeat center 80px;padding-top:170px;}
+#super-bonus .super-bonus {display:table;margin:0 auto;}
+#super-bonus .super-bonus img {float:left;}
+#super-bonus .super-bonus .box {float:left;margin-left:50px;width:670px;margin-top:120px;}
+#super-bonus .super-bonus .texto1 {font-size:22px;text-transform:uppercase;font-family:'uniform_condensedbold';line-height:35px;}
+#super-bonus .super-bonus .titulo {text-transform:uppercase;font-family:'uniform_condensedbold';font-size:80px;margin-top:90px;margin-bottom:10px;}
+#super-bonus .super-bonus .texto2 {font-size:17px;text-align:justify;line-height:27px;}
+
+#comparativo {margin-top:-90px;}
+#comparativo .titulo-padrao {margin-bottom:60px;}
+#comparativo .box-titulos {float:left;width:216px;margin-top:110px;}
+#comparativo .box-info {float:left;width:325px;margin-left:13px;}
+#comparativo .box-q48 {float:right;width:295px;background:#f6ab00;border-radius:10px;}
+#comparativo .box-q48 .logo {width:100px;display:table;margin:0 auto;padding-top:29px;padding-bottom:30px;}
+#comparativo .box-q48 .box-yellow {height:108px;margin:0px 10px;display:table;width:calc(100% - 20px);border-bottom:1px solid #f8bc33;text-align:center;}
+#comparativo .box-q48 .valor-large {font-size:40px;font-weight:800;}
+#comparativo .box {margin-bottom:10px;border:1px solid #e4e4e4;display:table;float:left;border-radius:10px;height:100px;text-align:center;width:100%;}
+#comparativo .box.titulo {text-transform:uppercase;font-weight:700;font-size:20px;}
+#comparativo .center {display:table-cell;vertical-align:middle;}
+#comparativo .box .valor {font-size:20px;font-weight:800;}
+
+#garantia {background:url(http://q48emagrecimento.com/images/bg_garantia.jpg) no-repeat center top;height:496px;margin-top:50px;color:white;padding-top:300px;}
+#garantia .titulo {float:left;text-transform:uppercase;}
+#garantia .titulo .part1 {font-size:83px;font-family:'uniform_condensed_lightRg';line-height:90px;}
+#garantia .titulo .part2 {font-size:80px;font-family:'uniform_condensedbold';}
+#garantia .titulo .part3 {font-size:20px;font-family:'uniform_condensedbold';}
+#garantia .texto {float:right;width:615px;text-align:justify;line-height:25px;margin-top:-20px;}
+#garantia .texto p {margin-bottom:15px;}
+
+#comece {background:url(http://q48emagrecimento.com/images/bg_comece.jpg) no-repeat center top;height:999px;}
+#comece .box {float:right;width:600px;margin-top:190px;}
+#comece .box .titulo1 {text-transform:uppercase;font-family:'uniform_condensed_lightRg';font-size:50px;line-height:55px;}
+#comece .box .titulo1 strong {font-family:'uniform_condensedbold';}
+#comece .box .texto {line-height:27px;text-align:justify;margin-top:60px;}
+#comece .box .texto p {margin-bottom:15px;}
+#comece .box .titulo2 {text-transform:uppercase;font-family:'uniform_condensed_lightRg';font-size:30px;margin-top:40px;}
+#comece .box .titulo2 strong {font-family:'uniform_condensedbold';font-size:38px;}
+
+#redes {padding-top:100px;padding-bottom:100px;}
+#redes ul {display:table;margin:0 auto;}
+#redes ul li {text-align:center;width:212px;margin:0px 80px;float:left;color:black;}
+#redes ul li img {margin-bottom:30px;}
+#redes ul li p {font-size:32px;line-height:37px;}
+
+.iframe-video {
+	display: none;
+}
+
+#depoimentos {background:url(http://q48emagrecimento.com/images/bg_depoimentos.png) no-repeat center top;height:1250px;margin-top:-150px;position:relative;z-index:2;}
+#depoimentos .depoimento {float:left;width:280px;margin-right:26px;text-align:center;}
+#depoimentos .depoimento .video {position:relative;overflow:hidden;height:164px;border-radius:6px;width:100%;display:block;}
+#depoimentos .depoimento .video .overlay {position:absolute;z-index:2;width:100%;height:100%;background:black;opacity:0.3;}
+#depoimentos .depoimento .video img {height:100%;}
+#depoimentos .depoimento .video .perdeu {text-transform:uppercase;color:#f29a06;position:absolute;width:120px;margin-top:40px;z-index:4;text-align:center;}
+#depoimentos .depoimento .video .perdeu .part1 {font-size:26px;font-family:'uniform_condensed_lightRg';}
+#depoimentos .depoimento .video .perdeu .part2 {font-size:36px;font-family:'uniform_condensedbold';line-height:28px;}
+#depoimentos .depoimento .video .perdeu .part3 {font-size:18px;font-family:'uniform_condensed_lightRg';}
+#depoimentos .depoimento .video .play {width:100%;height:100%;background:url(http://q48emagrecimento.com/images/ico_play3.png) no-repeat center;position:absolute;z-index:3;}
+#depoimentos .depoimento .nome {text-transform:uppercase;font-size:20px;font-family:'uniform_condensedbold';margin-top:25px;margin-bottom:12px;}
+#depoimentos .depoimento .texto {font-size:19px;font-family:'Open Sans';font-weight:500; margin-bottom: 30px;}
+
+#vinicius-possebon {background:url(http://q48emagrecimento.com/images/bg_vinicius.jpg) no-repeat center top;height:985px;margin-top:-150px;}
+#vinicius-possebon .box {padding-top:180px;}
+#vinicius-possebon .nome {text-transform:uppercase;font-family:'uniform_condensedbold';font-size:70px;margin-bottom:20px;}
+#vinicius-possebon .texto {line-height:27px;width:500px;text-align:justify;}
+#vinicius-possebon .texto p {margin-bottom:15px;}
+#vinicius-possebon .logos {margin-top:20px;margin-bottom:50px;}
+#vinicius-possebon .assista {display:block;}
+#vinicius-possebon .assista img {float:left;}
+#vinicius-possebon .assista .assista-texto {float:left;margin-left:20px;text-transform:uppercase;line-height:35px;margin-top:40px;}
+#vinicius-possebon .assista .assista-texto .part1 {font-size:29px;font-family:'uniform_condensed_lightRg';}
+#vinicius-possebon .assista .assista-texto .part2 {font-size:36px;font-family:'uniform_condensedbold';}
+
+#faca-parte {margin-top:-80px;margin-bottom:60px;}
+#faca-parte .titulo-padrao {margin-bottom:-10px;}
+
+#perguntas {background:#f6ab00;height:1540px;margin-top:-50px;position:relative;z-index:2;}
+#perguntas .box-pergunta {border:2px solid #333333;padding:20px 20px;border-radius:7px;margin-bottom:17px;}
+#perguntas .box-pergunta .pergunta {font-size:20px;cursor:pointer;position:relative;text-transform:uppercase;font-family:'uniform_condensedbold';}
+#perguntas .box-pergunta .pergunta .arrow {position:absolute;right:0px;width:15px;height:9px;background:url(http://q48emagrecimento.com/images/ico_arrow.png) no-repeat center top;top:5px;}
+#perguntas .box-pergunta .resposta {line-height:28px;font-size:16px;display:none;margin-top:6px;}
+#perguntas .box-pergunta .resposta p {margin-bottom:15px;}
+#perguntas .box-pergunta.opened .pergunta .arrow {background-position:center bottom;}
+#perguntas .lista {position:relative;}
+#perguntas .mCSB_dragger_bar {width:8px;background:#333333;}
+#perguntas .mCSB_draggerRail {display:none !important;}
+
+@media screen and (max-width:1200px) {
+	.wrapper {width:1000px;}
+
+	#home .revelado {width:564px;}
+	#comecar-agora .video {width:calc(100% - 20px);}
+
+	#resultados .pessoas .pessoa {width:380px;margin:0px 40px;}
+	#resultados .pessoas .pessoa .video .perdeu {width:145px;}
+
+	#diferente .box-texto {width:500px;}
+	#diferente img {width:470px;}
+
+	#depoimento .video {width:calc(100% - 20px);}
+	#depoimento .video img {width:auto;height:100%;}
+
+	#diferencas .box {margin:0px 50px;}
+
+	#dispositivos .dispositivos .imagem {width:700px;}
+	#dispositivos .dispositivos .box-texto {margin-top:70px;}
+	#dispositivos .ciclo img {width:470px;}
+	#dispositivos .ciclo .box-texto {width:510px;}
+
+	#bonus .bonus {margin-right:45px;width:290px;}
+	#bonus .bonus .imagem {width:290px;height:290px;}
+
+	#comparativo .box-info {width:250px;}
+	#comparativo .box-titulos {width:190px;}
+	#comparativo .box-q48 {width:272px;}
+
+	#garantia .texto {width:480px;}
+
+	#depoimentos .depoimento {width:235px;margin-right:20px;}
+	#depoimentos .depoimento .video .perdeu {width:85px;}
+
+	#comece .box {width:500px;}
+
+	#redes ul li {margin:0px 56px;}
+
+	#vinicius-possebon {background-size:1600px auto;margin-top:-100px;}
+	#vinicius-possebon .box {padding-top:120px;}
+	#vinicius-possebon .nome {font-size:40px;}
+	#vinicius-possebon .texto {width:450px;}
+	#vinicius-possebon .logos {margin-top:0px;margin-bottom:20px;width:500px;}
+	#vinicius-possebon .assista img {width:120px;}
+	#vinicius-possebon .assista .assista-texto {margin-top:30px;}
+
+	#faca-parte {margin-top:-220px;}
+}
